@@ -1,0 +1,6 @@
+{
+  "files.associations": {
+    "eigen": "cpp",
+    "iostream": "cpp"
+  }
+}
