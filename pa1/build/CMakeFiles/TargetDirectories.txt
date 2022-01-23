@@ -1,3 +1,3 @@
-/Users/zyz/Desktop/project/graphics/PA1/build/CMakeFiles/Rasterizer.dir
-/Users/zyz/Desktop/project/graphics/PA1/build/CMakeFiles/edit_cache.dir
-/Users/zyz/Desktop/project/graphics/PA1/build/CMakeFiles/rebuild_cache.dir
+/Users/zyz/Desktop/project/graphics/pa1/build/CMakeFiles/Rasterizer.dir
+/Users/zyz/Desktop/project/graphics/pa1/build/CMakeFiles/edit_cache.dir
+/Users/zyz/Desktop/project/graphics/pa1/build/CMakeFiles/rebuild_cache.dir

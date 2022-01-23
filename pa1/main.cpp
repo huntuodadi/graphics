@@ -15,33 +15,40 @@ Eigen::Matrix4f get_view_matrix(Eigen::Vector3f eye_pos)
         -eye_pos[2], 0, 0, 0, 1;
 
     view = translate * view;
-
     return view;
 }
 
 Eigen::Matrix4f get_model_matrix(float rotation_angle)
 {
     Eigen::Matrix4f model = Eigen::Matrix4f::Identity();
-
-    // TODO: Implement this function
     // Create the model matrix for rotating the triangle around the Z axis.
     // Then return it.
-
-    return model;
+    Eigen::Matrix4f translate;
+    float realAngle = (rotation_angle / 180) * MY_PI;
+    translate << cos(realAngle), -sin(realAngle), 0, 0,
+                sin(realAngle), cos(realAngle), 0, 0,
+                0, 0, 1.0, 0,
+                0, 0, 0, 1.0;
+    return translate * model;
 }
 
 Eigen::Matrix4f get_projection_matrix(float eye_fov, float aspect_ratio,
                                       float zNear, float zFar)
 {
-    // Students will implement this function
-
     Eigen::Matrix4f projection = Eigen::Matrix4f::Identity();
-
-    // TODO: Implement this function
     // Create the projection matrix for the given parameters.
     // Then return it.
+    float top = tan(eye_fov/2) * zNear;
+    float right = aspect_ratio * top;
 
-    return projection;
+    Eigen::Matrix4f projectionToOrtho;
+    Eigen::Matrix4f ortho;
+    Eigen::Matrix4f translate;
+
+    projectionToOrtho << zNear,0,0,0, 0,zNear,0,0, 0,0,zNear+zFar,zNear*zFar, 0,0,1,0;
+    ortho << 1/right,0,0,0, 0,1/top,0,0, 0,0,2/(zNear-zFar),0, 0,0,0,1;
+    translate = ortho * projectionToOrtho;
+    return translate * projection;
 }
 
 int main(int argc, const char** argv)
@@ -107,10 +114,10 @@ int main(int argc, const char** argv)
         std::cout << "frame count: " << frame_count++ << '\n';
 
         if (key == 'a') {
-            angle += 10;
+            angle += 2;
         }
         else if (key == 'd') {
-            angle -= 10;
+            angle -= 2;
         }
     }
 

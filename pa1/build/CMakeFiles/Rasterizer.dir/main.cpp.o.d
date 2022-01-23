@@ -1,6 +1,6 @@
 CMakeFiles/Rasterizer.dir/main.cpp.o: \
-  /Users/zyz/Desktop/project/graphics/PA1/main.cpp \
-  /Users/zyz/Desktop/project/graphics/PA1/Triangle.hpp \
+  /Users/zyz/Desktop/project/graphics/pa1/main.cpp \
+  /Users/zyz/Desktop/project/graphics/pa1/Triangle.hpp \
   /usr/local/include/eigen3/Eigen/Eigen \
   /usr/local/include/eigen3/Eigen/Dense \
   /usr/local/include/eigen3/Eigen/Core \
@@ -506,7 +506,7 @@ CMakeFiles/Rasterizer.dir/main.cpp.o: \
   /usr/local/include/eigen3/Eigen/src/IterativeLinearSolvers/IncompleteLUT.h \
   /usr/local/include/eigen3/Eigen/src/IterativeLinearSolvers/IncompleteCholesky.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/list \
-  /Users/zyz/Desktop/project/graphics/PA1/rasterizer.hpp \
+  /Users/zyz/Desktop/project/graphics/pa1/rasterizer.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include/c++/v1/iostream \
   /usr/local/include/opencv2/opencv.hpp \
   /usr/local/include/opencv2/opencv_modules.hpp \
